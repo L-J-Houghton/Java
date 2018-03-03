@@ -1,0 +1,16 @@
+One of the most challenging problems within the assignment was implementing the spell checker using the Levenshtein algorithm.
+This was challenging as there were many factors that needed to be taken into account in order to implement the algorithm and the rest of the program efficiently. 
+In particular implementing a way in which the string variables (words) interact with each other as well writing to the output files (output dictionary and the output file) and also exchange data and values such as the string variables taken in from the file reader. 
+In order to solve the problem within the spell checker program I had chosen to make multiple array lists which would be able to store the string variables from the input file , input dictionary file , suggestions, output file and output dictionary file.
+First I had made three private lists one being ‘words’ that would enable the user to add words to the output dictionary through adding strings to another array list. The second list being ‘source’ which enables the string data from the input file which would be stored within an array list created further on in the program.
+
+The other list being ‘output’ which enables the string data from the program such as corrections and new words which once stored within an array list would be used to write to the output files.
+I had then made array lists from these lists in order to store the input, output and other string data that would need to be stored such as suggestions.
+I had then used multiple methods built into Java such as add() to add string data to the different array lists applicable and also clear() method that would clear the array list for every time the files had been loaded so that when the program writes to the output duplicate data shall not be written to the output file.
+I had also used other array lists within the program to store the results which in turn was used to search for the minimum distance (cost) between the input strings from the source array list and compares them to that of the strings within the words array list. 
+
+By doing this the result array list holds the possible values that are closest in terms of distance and lowest cost to both strings from the words array list and the source array list. 
+By doing this the program is able to give the user suggestions thus giving the user the ability to correct any spelling errors within the input file. 
+
+By doing this I have learnt that in order to work with multiple input and output files it’s more efficient and effective to implement / create array lists and populate the array lists with shared values using the add() method when necessary. 
+I have also learnt the interactivity between multiple array lists and linked hash sets. I will use this knowledge I have gained within further projects and programs within Java for future use.
